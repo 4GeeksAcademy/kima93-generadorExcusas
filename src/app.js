@@ -8,14 +8,14 @@ window.onload = function() {
   let when = ['before the class ', 'when I was sleeping ', 'while I was exercising ', 'during my lunch ', 'while I was praying '];
   
 
-  let rdm1 = Math.floor(Math.random() * who.length);
-  let rdm2 = Math.floor(Math.random() * action.length);
-  let rdm3 = Math.floor(Math.random() * what.length);
-  let rdm4 = Math.floor(Math.random() * when.length);
+  let randomWho = Math.floor(Math.random() * who.length);
+  let randomAction = Math.floor(Math.random() * action.length);
+  let randomWhat = Math.floor(Math.random() * what.length);
+  let randomWhen = Math.floor(Math.random() * when.length);
 
   
   const excuseElement = document.querySelector("#excuse")
-  excuseElement.innerHTML = who[rdm1] + action[rdm2] + what[rdm3] + when[rdm4];
+  excuseElement.innerHTML = who[randomWho] + action[randomAction] + what[randomWhat] + when[randomWhen];
   
 }
 ;
